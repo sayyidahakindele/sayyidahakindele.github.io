@@ -8,14 +8,14 @@ h2 {
 
 /* collapsible experience */
 /*heading section*/
-.job.odd {
+.job.even {
 	border: 2px solid #9f3f69;
-    background-color: #9f3f69;
+    background-color: #111111;
     border-radius: 3px;
     margin-bottom: 10px;
 }
 
-.job.even {
+.job.odd {
 	border: 2px solid #9f3f69;
     background-color: #111111;
     border-radius: 3px;
@@ -103,3 +103,86 @@ h2 {
     font-weight: bold;
 }
 
+
+/* project carousel*/
+/*carousel button*/
+.carousel-control-prev, 
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 5%;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.project-container {
+	display: flex;
+    width: 80%;
+	border-radius: 10px;
+	border: 2px solid #9f3f69;
+	/* padding-right: 3px; */
+}
+
+
+
+/*heading section*/
+.project-title {
+	background-color: #9f3f69;;
+	border-radius: 3px 0px 0px 3px;
+	position: relative;
+}
+
+@media (max-width: 767px) {
+	.project-title {
+		background-color: #9f3f69;;
+		border-radius: 3px 3px 0px 0px;
+		position: relative;
+		
+	}
+	.project-title h1,
+	.project-title a {
+		margin: 2px;
+  		padding: 0;
+	}
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+	margin: 0;
+	color: #fef8e0;
+    
+}
+
+.play {
+    color: #111111;
+    font-size: 24px;
+}
+
+/* main section */
+.description {
+    font-family: 'Lato', sans-serif;
+	font-size: 16px;
+  	color: #fef8e0;
+}
+
+.projectskills {
+    display: inline-block;
+    margin: 0 10px;
+    color: #d297b1;
+    font-weight: bold;
+}
