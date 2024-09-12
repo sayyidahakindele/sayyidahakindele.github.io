@@ -3,7 +3,7 @@ import React from 'react';
 const Codingcontent = () => (
     <div>
 		<div>
-			<h1>coming soon🚧</h1>
+			<h1>coding🚧</h1>
 		</div>
 	</div>
 );

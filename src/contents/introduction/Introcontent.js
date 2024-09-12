@@ -3,7 +3,7 @@ import React from 'react';
 const Introcontent = () => (
     <div>
 		<div>
-			<h1>coming soon🚧</h1>
+			<h1>intro</h1>
 		</div>
 	</div>
 );

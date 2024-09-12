@@ -1,18 +1,17 @@
-import logo from './logo.svg';
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 import Introcontent from './contents/introduction/Introcontent';
-import Codingcontent from './contents/introduction/Codingcontent';
-import Writingcontent from './contents/introduction/Writingcontent';
-import Craftingcontent from './contents/introduction/Craftingcontent';
+import Codingcontent from './contents/coding/Codingcontent';
+import Writingcontent from './contents/writing/Writingcontent';
+import Craftingcontent from './contents/crafting/Craftingcontent';
 
 import './App.css';
 
 function App() {
-  const [content, setContent] = useState('');
+	const [content, setContent] = useState('');
 
-  // onclick functions for tabs, allocating specific information
+	// Update content based on button click
 	useEffect(() => {
 		const myself = document.getElementById('myself');
 		const coder = document.getElementById('coder');
@@ -46,11 +45,12 @@ function App() {
 		}
 	};
 
-
-  return (
+	return (
 		<div className="content">
-      <h1>helloooooooo</h1>
-			{content}
+			<nav></nav>
+			<div>
+				{content}
+			</div>
 		</div>
 	);
 }
