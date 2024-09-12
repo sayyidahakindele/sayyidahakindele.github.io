@@ -8,9 +8,16 @@ h2 {
 
 /* collapsible experience */
 /*heading section*/
-.job {
+.job.odd {
 	border: 2px solid #9f3f69;
     background-color: #9f3f69;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.job.even {
+	border: 2px solid #9f3f69;
+    background-color: #111111;
     border-radius: 3px;
     margin-bottom: 10px;
 }

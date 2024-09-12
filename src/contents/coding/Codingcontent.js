@@ -31,7 +31,7 @@ const Codingcontent = () => {
     return (
         <div className="container mt-5 coding">
             <h2>experience.</h2>
-			<div id="c2" className='job'>
+			<div id="c2" className='job odd'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
@@ -56,7 +56,7 @@ const Codingcontent = () => {
 						</div>
                     </div>
 			</div>
-			<div id="n" className='job'>
+			<div id="n" className='job even'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
@@ -83,7 +83,7 @@ const Codingcontent = () => {
 						</div>
                     </div>
 			</div>
-			<div id="z" className='job'>
+			<div id="z" className='job odd'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
@@ -110,7 +110,7 @@ const Codingcontent = () => {
                         </div>
                     </div>
 			</div>
-			<div id="rv3" className='job'>
+			<div id="rv3" className='job even'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
@@ -140,7 +140,7 @@ const Codingcontent = () => {
 						</div>
                     </div>
 			</div>
-			<div id="rv2" className='job'>
+			<div id="rv2" className='job odd'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
@@ -169,7 +169,7 @@ const Codingcontent = () => {
 						</div>
                     </div>
 			</div>
-			<div id="c1" className='job'>
+			<div id="c1" className='job even'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
@@ -193,7 +193,7 @@ const Codingcontent = () => {
 						</div>
                     </div>
 			</div>
-			<div id="rv1" className='job'>
+			<div id="rv1" className='job odd'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>
