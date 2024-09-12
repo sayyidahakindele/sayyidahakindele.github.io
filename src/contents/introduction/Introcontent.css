@@ -1,0 +1,27 @@
+p {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 16px;
+  	color: #fef8e0;
+}
+
+h2 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 35px;
+	color: #d297b1;
+	font-weight: bold;
+	padding: 0;
+}
+
+h3 {
+    font-size: '18px';
+    font-weight: 'bold';
+    color: #fef8e0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
