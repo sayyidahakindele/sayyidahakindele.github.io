@@ -3,7 +3,7 @@ import self from '../photos/photo.png';
 import './Introcontent.css';
 
 const Introcontent = () => (
-    <div className="container mt-5">
+    <div className="container mt-5 introduction">
 		<div className="row">
 			<div className="col-12 col-md-9 order-md-1 order-2 text-center text-md-start text-container">
 				<h3>Hi there! My name is</h3>
@@ -29,7 +29,7 @@ const Introcontent = () => (
 				<p>I've loved embroidering, cooking and baking since I was a kid and I recently taught myself to crochet. Knitting and sewing are next on my list! I also enjoy reading and writing which I try to do outside when the weather is warm.</p>
 			</div>
 		    <div className="col-12 col-md-3 order-md-2 order-1 text-center img-container">
-			    <img src={self} alt="a smiling sayyidah akindele"></img>
+			    <img className="mypicture" src={self} alt="a smiling sayyidah akindele"></img>
 		    </div>
 	    </div>
 	</div>

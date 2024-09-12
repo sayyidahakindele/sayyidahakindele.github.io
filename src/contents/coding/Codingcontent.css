@@ -1,0 +1,98 @@
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	color: #d297b1;
+	font-weight: bold;
+	padding: 0;
+}
+
+/* collapsible experience */
+/*heading section*/
+.job {
+	border: 2px solid #9f3f69;
+    background-color: #9f3f69;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.job:hover {
+	transform: scale(1.05);
+    box-shadow: 0 3px 6px #9f3f69;
+    margin-bottom: 15px;
+}
+
+.jobinfo {
+	display: flex;
+	align-items: start;
+}
+
+.companylogo {
+	width: 55px;
+	height: 55px;
+	border-radius: 3px;
+	margin-top: 5px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+}
+
+.jobtitle,
+.jobname,
+.date {
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+    color: #fef8e0;
+}
+
+.jobtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 'bold';
+}
+
+.jobname {
+    font-size: 16px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+/*collapsed section*/
+.collapsible {
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	background: none;
+	width: max-content;
+}
+
+.collapsible-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-out;
+	background-color: #111111;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding-right: 3px;
+}
+  
+.collapsible-content.active {
+	max-height: 1000px;
+}
+
+.details p {
+    margin: 0 13px;
+}
+
+.skills {
+    display: flex;
+    justify-content: right;
+}
+  
+.skills p {
+    margin: 0 10px;
+    color: #d297b1;
+    font-weight: bold;
+}
+
