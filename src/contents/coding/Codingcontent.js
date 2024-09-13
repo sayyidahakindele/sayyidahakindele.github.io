@@ -7,32 +7,34 @@ import "./Codingcontent.css"
 
 const Codingcontent = () => {
     useEffect(() => {
-        const toggleCollapsible = (event) => {
-            const button = event.currentTarget;
-            const content = button.nextElementSibling;
-
-            button.classList.toggle('active');
-            content.classList.toggle('active');
-        };
-
-        const buttons = document.querySelectorAll('.collapsible');
-        buttons.forEach((button) => {
-            console.log('Adding event listener to:', button); // Debugging statement
-            button.addEventListener('click', toggleCollapsible);
-        });
-
-        return () => {
-            buttons.forEach((button) => {
-                button.removeEventListener('click', toggleCollapsible);
-            });
-        };
-    }, []);
+		const toggleCollapsible = (event) => {
+			const container = event.currentTarget.closest('.job');
+			const allContainers = document.querySelectorAll('.job');
+	
+			// Remove 'active' class from all containers
+			allContainers.forEach(cont => cont.classList.remove('active'));
+	
+			// Add 'active' class to the clicked container
+			container.classList.add('active');
+		};
+	
+		const buttons = document.querySelectorAll('.collapsible');
+		buttons.forEach((button) => {
+			button.addEventListener('click', toggleCollapsible);
+		});
+	
+		return () => {
+			buttons.forEach((button) => {
+				button.removeEventListener('click', toggleCollapsible);
+			});
+		};
+	}, []);
 
     return (
         <div className="container mt-5 coding">
 			<div id="experience">
 				<h2>experience.</h2>
-				<div id="c2" className='job odd'>
+				<div id="c2" className='job'>
 					<button type="button" className="collapsible w-100">
 						<div className="jobinfo">
 							<div className='picture'>
@@ -45,19 +47,18 @@ const Codingcontent = () => {
 							</div>
 						</div>
 					</button>
-						<div className="collapsible-content">
-							{/* <p className="date">June 2024 - Present</p> */}
-							<div className='details'>
-								<p>✨ Assisted students in COMP 2404, Introduction to Software Engineering, by debugging code and guiding them through tasks</p>
-								<p>✨ Graded assignments and provided constructive feedback to students</p>
-							</div>
-							<div className="skills">
-								<p>C++</p>
-								<p>Linux</p>
-							</div>
+					<div className="collapsible-content">
+						<div className='details'>
+							<p>✨ Assisted students in COMP 2404, Introduction to Software Engineering, by debugging code and guiding them through tasks</p>
+							<p>✨ Graded assignments and provided constructive feedback to students</p>
 						</div>
+						<div className="skills">
+							<p>C++</p>
+							<p>Linux</p>
+						</div>
+					</div>
 				</div>
-				<div id="n" className='job even'>
+				<div id="n" className='job'>
 					<button type="button" className="collapsible w-100">
 						<div className="jobinfo">
 							<div className='picture'>
@@ -84,7 +85,7 @@ const Codingcontent = () => {
 							</div>
 						</div>
 				</div>
-				<div id="z" className='job odd'>
+				<div id="z" className='job'>
 					<button type="button" className="collapsible w-100">
 						<div className="jobinfo">
 							<div className='picture'>
@@ -111,7 +112,7 @@ const Codingcontent = () => {
 							</div>
 						</div>
 				</div>
-				<div id="rv3" className='job even'>
+				<div id="rv3" className='job'>
 					<button type="button" className="collapsible w-100">
 						<div className="jobinfo">
 							<div className='picture'>
@@ -141,7 +142,7 @@ const Codingcontent = () => {
 							</div>
 						</div>
 				</div>
-				<div id="rv2" className='job odd'>
+				<div id="rv2" className='job'>
 					<button type="button" className="collapsible w-100">
 						<div className="jobinfo">
 							<div className='picture'>
@@ -170,7 +171,7 @@ const Codingcontent = () => {
 							</div>
 						</div>
 				</div>
-				<div id="c1" className='job even'>
+				<div id="c1" className='job'>
 					<button type="button" className="collapsible w-100">
 						<div className="jobinfo">
 							<div className='picture'>
@@ -194,7 +195,7 @@ const Codingcontent = () => {
 							</div>
 						</div>
 				</div>
-				<div id="rv1" className='job odd'>
+				<div id="rv1" className='job'>
 				<button type="button" className="collapsible w-100">
                     <div className="jobinfo">
                         <div className='picture'>

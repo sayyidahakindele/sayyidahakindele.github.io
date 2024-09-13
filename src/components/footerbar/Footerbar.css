@@ -1,0 +1,20 @@
+.footerbar {
+    border-top: 1px solid #fef8e0;
+    bottom: 0;
+    width: 100%;
+    background-color: #111111;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerpart {
+    color: #d297b1;
+    margin-left: 15px;
+}
+
+.footerpart:hover {
+    color: #9f3f69;
+    font-weight: bold;
+}

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
+import Navbar from './components/navbar/Navbar';
+import Footerbar from './components/footerbar/Footerbar'
 import Introcontent from './contents/introduction/Introcontent';
 import Codingcontent from './contents/coding/Codingcontent';
 import Writingcontent from './contents/writing/Writingcontent';
@@ -17,6 +19,33 @@ function App() {
 		const coder = document.getElementById('coder');
 		const writer = document.getElementById('writer');
 		const crafter = document.getElementById('crafter');
+		const buttons = [myself, coder, writer, crafter];
+
+		const updateContent = (buttonId) => {
+			buttons.forEach(button => {
+				if (button.id === buttonId) {
+					button.classList.add('selected');
+				} else {
+					button.classList.remove('selected');
+				}
+			});
+
+			switch (buttonId) {
+				case 'myself':
+					setContent(<Introcontent />);
+					break;
+				case 'coder':
+					setContent(<Codingcontent />)
+					break;
+				case 'writer':
+					setContent(<Writingcontent />);
+					break;
+				case 'crafter':
+					setContent(<Craftingcontent />);
+					break;
+				default:
+			}
+		};
 
 		myself.addEventListener('click', () => updateContent('myself'));
 		coder.addEventListener('click', () => updateContent('coder'));
@@ -27,30 +56,13 @@ function App() {
 		updateContent('myself');
 	}, []);
 
-	const updateContent = (buttonId) => {
-		switch (buttonId) {
-			case 'myself':
-				setContent(<Introcontent />);
-				break;
-			case 'coder':
-				setContent(<Codingcontent />)
-				break;
-			case 'writer':
-				setContent(<Writingcontent />);
-				break;
-			case 'crafter':
-				setContent(<Craftingcontent />);
-				break;
-			default:
-		}
-	};
-
 	return (
 		<div className="content">
-			<nav></nav>
+			<Navbar />
 			<div>
 				{content}
 			</div>
+			<Footerbar />
 		</div>
 	);
 }

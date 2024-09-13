@@ -1,9 +1,10 @@
 import React from 'react';
+import './Writingcontent.css';
 
 const Writingcontent = () => (
-    <div>
+    <div className='container mt-5 writing'>
 		<div>
-			<h1>writing</h1>
+			<h1 className='writing'>coming soon🚧</h1>
 		</div>
 	</div>
 );

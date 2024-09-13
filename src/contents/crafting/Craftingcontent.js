@@ -1,9 +1,11 @@
 import React from 'react';
+import './Craftingcontent.css';
+
 
 const Craftingcontent = () => (
-    <div>
+    <div className='container mt-5 crafting'>
 		<div>
-			<h1>coming soon🚧</h1>
+			<h1 className='crafting'>coming soon🚧</h1>
 		</div>
 	</div>
 );

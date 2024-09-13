@@ -8,14 +8,8 @@ h2 {
 
 /* collapsible experience */
 /*heading section*/
-.job.even {
-	border: 2px solid #9f3f69;
-    background-color: #111111;
-    border-radius: 3px;
-    margin-bottom: 10px;
-}
-
-.job.odd {
+.job {
+	transition: max-height 0.3s ease-out;
 	border: 2px solid #9f3f69;
     background-color: #111111;
     border-radius: 3px;
@@ -25,6 +19,13 @@ h2 {
 .job:hover {
 	transform: scale(1.05);
     box-shadow: 0 3px 6px #9f3f69;
+    margin-bottom: 15px;
+}
+
+.job.active {
+	transform: scale(1.05);
+    box-shadow: 0 3px 6px #9f3f69;
+	background-color: #111111;
     margin-bottom: 15px;
 }
 
@@ -75,17 +76,11 @@ h2 {
 }
 
 .collapsible-content {
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s ease-out;
-	background-color: #111111;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-	padding-right: 3px;
+    display: none;
 }
-  
-.collapsible-content.active {
-	max-height: 1000px;
+
+.job.active .collapsible-content {
+    display: block;
 }
 
 .details p {
@@ -134,10 +129,8 @@ h2 {
     width: 80%;
 	border-radius: 10px;
 	border: 2px solid #9f3f69;
-	/* padding-right: 3px; */
+	margin-bottom: 20px;
 }
-
-
 
 /*heading section*/
 .project-title {
@@ -148,7 +141,7 @@ h2 {
 
 @media (max-width: 767px) {
 	.project-title {
-		background-color: #9f3f69;;
+		background-color: #9f3f69;
 		border-radius: 3px 3px 0px 0px;
 		position: relative;
 		

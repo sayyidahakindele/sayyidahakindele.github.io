@@ -1,0 +1,28 @@
+#navbarNav {
+    border-bottom: 1px solid #fef8e0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #111111;
+}
+
+/* Default state */
+.section {
+    color: #d297b1;
+    font-weight: normal;
+}
+  
+/* Hover state */
+.section:hover {
+    color: #9f3f69;
+    font-weight: bold;
+}
+  
+/* Selected state */
+.section.selected {
+    color: #9f3f69;
+    font-weight: bold;
+}
+
+  

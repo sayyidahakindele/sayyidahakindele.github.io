@@ -1,0 +1,6 @@
+h1.crafting {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 75vh;
+}
